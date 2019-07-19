@@ -60,7 +60,7 @@ app.use('/graphql', graphqlHttp({
         },
         deleteTodo: (args) => {
             
-            todos.splice(args.index);
+            todos.splice(args.index, 1);
             return todo;
         }
 
